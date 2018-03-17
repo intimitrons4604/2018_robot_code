@@ -23,7 +23,8 @@ void DriveWithJoystick::Execute()
 {
     auto &joystick = Controls::controller;
     double straight = joystick.GetY(JoystickHand::kLeftHand);
-    double turn = -1 * joystick.GetX(JoystickHand::kRightHand);
+    double turn = -1 * std::pow(joystick.GetX(JoystickHand::kRightHand), 3)* 0.5 ;
+// The code above squares the robot, so right away it doesn't super super fast.
 
     Robot::drivetrain.ArcadeDrive(straight, turn);
 }

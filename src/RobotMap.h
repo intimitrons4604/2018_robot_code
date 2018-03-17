@@ -16,10 +16,10 @@
 
 // For example to map the left and right motors, you could define the
 // following variables to use with your drivetrain subsystem.
-constexpr int FRONT_LEFT = 1;
-constexpr int REAR_LEFT = 2;
-constexpr int FRONT_RIGHT = 3;
-constexpr int REAR_RIGHT = 4;
+constexpr int FRONT_LEFT = 2;
+constexpr int REAR_LEFT = 1;
+constexpr int FRONT_RIGHT = 4;
+constexpr int REAR_RIGHT = 3;
 constexpr int LEFT_CLAW_MOTOR = 5;
 constexpr int RIGHT_CLAW_MOTOR = 6;
 constexpr int WINCH_MOTOR = 7;
